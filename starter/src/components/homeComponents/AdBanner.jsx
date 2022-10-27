@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const AdBanner = () => {
   return (
-    <div
+    <div className="banner"
       style={{
         background: `linear-gradient(
           190deg,
@@ -14,7 +14,7 @@ const AdBanner = () => {
         backgroundSize: "cover",
       }}
     >
-      <div>
+      <div className="ad-text">
         <h3>New Recipe</h3>
         <h1>Pineapple Salmon</h1>
         <h3>
