@@ -4,7 +4,7 @@ import { ImFacebook, ImInstagram, ImTwitter, ImGithub } from "react-icons/im";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div id="icons">
+      <div className="icons">
         <h5>Hit us up on our socials!</h5>
 
         <div className="footericons">

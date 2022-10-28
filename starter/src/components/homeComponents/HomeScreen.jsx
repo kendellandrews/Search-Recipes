@@ -21,7 +21,7 @@ const HomeScreen = () => {
   },[])
   
   return (
-    <div>
+    <div className='adBanner'>
       <AdBanner />
       <RecipeContainer recipes={recipes}/>
     </div>
