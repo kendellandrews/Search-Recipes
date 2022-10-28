@@ -11,6 +11,7 @@ const Header = () => {
               <button className="navBtns">Home</button>
             </Link>
             <Link to="/newRecipe">
+              {/* <a href="/newRecipe">Add Recipe</a> */}
               <button className="navBtns">Add Recipe</button>
             </Link>
         </nav>

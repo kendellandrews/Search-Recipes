@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "./NewRecipe.module.css";
 import { Formik } from "formik";
 import axios from "axios";
 
@@ -54,7 +53,7 @@ const NewRecipeScreen = () => {
       <Formik initialValues={initialValues} onSubmit={onSubmit}>
         {({ values, handleChange, handleSubmit }) => (
           <form onSubmit={handleSubmit}>
-            <div className={inputContainer}>
+            <div className="inputContainer">
               <input
                 placeholder="Title your Recipe!"
                 value={values.recipeName}
@@ -68,7 +67,7 @@ const NewRecipeScreen = () => {
                 name="imageURL"
               />
             </div>
-            <div className={radioContainer}>
+            <div className="radioContainer">
               <span>
                 <input
                   type="radio"
@@ -97,7 +96,7 @@ const NewRecipeScreen = () => {
                 <h5>Drink</h5>
               </span>
             </div>
-            <div className={inputContainer}>
+            <div className="inputContainer">
               <input
                 placeholder="Prep Time"
                 value={values.prepTime}
@@ -118,8 +117,8 @@ const NewRecipeScreen = () => {
               />
             </div>
             <h3>Ingredients</h3>
-            <div className={inputContainer}>
-              <div className={styles.ingredient_inputs}>
+            <div className="inputContainer">
+              <div className="ingredientInputs">
                 <input
                   placeholder="Ingredient"
                   value={name}
