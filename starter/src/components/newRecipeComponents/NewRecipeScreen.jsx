@@ -29,15 +29,16 @@ const NewRecipeScreen = () => {
     values.ingredients = ingredients;
     console.log(values);
   };
-  //   axios
-  //     .post(`https://recipes.devmountain.com/recipes`, values)
-  //     .then((res) => {
-  //       console.log(res.data);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // };
+
+  axios
+      .post(`https://recipes.devmountain.com/recipes`)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  
 
   const ingredientDisplay = ingredients.map((ing) => {
     return (
@@ -48,11 +49,11 @@ const NewRecipeScreen = () => {
   });
 
   return (
-    <section>
+    <section >
       <h1>Tell us about your Recipe!</h1>
       <Formik initialValues={initialValues} onSubmit={onSubmit}>
         {({ values, handleChange, handleSubmit }) => (
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className="inputForm">
             <div className="inputContainer">
               <input
                 placeholder="Title your Recipe!"
@@ -130,15 +131,16 @@ const NewRecipeScreen = () => {
                   onChange={(e) => setQuantity(e.target.value)}
                 />
               </div>
-              <ul>{ingredientDisplay}</ul>
+              <div className="newIngredientUl">
+                <ul>{ingredientDisplay}</ul>
+              </div>
             </div>
             <button
               type="button"
               className="orangeBtn"
               onClick={addIngredient}
-            >
-              Add Another
-            </button>
+            >Add Another</button>
+            
             <textarea
               placeholder="Type your instructions"
               rows={5}
@@ -146,7 +148,7 @@ const NewRecipeScreen = () => {
               onChange={handleChange}
               name="instructions"
             />
-            <button type="submit" className="blueBtn">
+            <button type="submit" className="submitBtn">
               Submit
             </button>
           </form>
