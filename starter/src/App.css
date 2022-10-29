@@ -20,22 +20,26 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 h1, h2, h3, h4, h5, h6, p, input, button, span, div, body, textarea {
-	font-family: 'Inter', sans-serif;
+	font-family:Georgia, 'Times New Roman', Times, serif;
   }
 
 h1 {
-	font-size: 30px;
-	color: white;
+	font-size: 50px;
+	color: rgb(243, 157, 36);
+	margin-bottom: 30px;
 }
 
 h2 {
-font-size: 24px;
+font-size: 26px;
 color: white;
+margin-bottom: 35px;
 }
+
 
 h4 {
 font-size: 20px;
 color: white;
+margin-bottom: 30px;
 }
 
 
@@ -43,6 +47,7 @@ color: white;
 	position: relative;
 	top: 0;
 	min-height: 100vh;
+	padding-bottom: 150px;
 }
 
 /* .header {
@@ -80,6 +85,9 @@ color: white;
 
 .fontTitle {
 	font-size: 2rem;
+	align-items: center;
+	justify-content: center;
+
 }
 
 .nav ul {
@@ -94,9 +102,10 @@ color: white;
 	color: inherit;
 	text-decoration: none;
 	height: 100%;
-	display: flex;
+	flex-direction: row;
 	align-items: center;
 	padding: .25rem;
+	font: 1em sans-serif;
 }
 
 .nav li.active {
@@ -113,7 +122,7 @@ color: white;
  .footer {
 	 display: flex;
 	height: 150px;
-	/* width: 100%; */
+	width: 100%;
 	background-color: #3f3f3f;
 	color: white;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -123,10 +132,10 @@ color: white;
 	padding-left: 5%;
 	padding-right: 5%;
 	text-align: center;
-	position: relative;
+	position: absolute;
 	bottom: 0;
 	/* margin-top: 100px; */
-	/* box-sizing: border-box; */
+	box-sizing: border-box;
 
 } 
 
@@ -180,39 +189,89 @@ color: white;
 
 .recipe-div {
 	display: flex;
-	flex-direction: column;
+	/* flex-direction: column; */
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.6);
+	width: 250px;
+	height: 350px;
 	align-items: center;
-	padding: 30px;
+	display: flex;
+	flex-direction:column;
+	text-align: center;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	/* flex-wrap: wrap;
+	align-items: center;
+	padding: 30px; */
+	
+}
+
+.recipe-div h3 {
+	justify-content: center;
+	align-items: center;
+	font-size: 23px;
+
 }
 
 .recipe-card {
-  width: 300px;
-  height: 450px;
+  width: 250px;
+  height: 260px;
   align-items: center;
   display: flex;
   flex-direction: column;
   text-align: center;
-  box-shadow: 0px 3px 10px rgba(0,0,0,0.6);
   justify-content: space-between;
   padding-bottom: 10px;
   box-sizing: border-box;
   border-radius: 3px;
 }
 
-.blueBtn {
-	color:white;
+#imgSld {
+	height: 250px;
+	width: 250px;
+	position: relative;
+	background-repeat: no-repeat;
 	align-items: center;
-	align-content: space-between;
+	align-self: center;
+	align-content: center;
+}
+
+.recipe-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+}
+
+.search-bar {
+	display: flex;
+	width: 30vw;
+	border-radius: 50px;
+	border: none;
+	background-color: #35c7da51;
+	align-items: center;
+	padding: 0 0 0 5px;
+	box-sizing: border-box;
+	min-width: 250px;
+}
+
+.recipeContainer {
+	display: flex;
+	gap: 50px;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
 }
 
 /* .recipe-card:hover{
 } */
 
-/* .recipe-img {
+.recipe-img {
 	width: 300px;
 	height: 300px;
 	margin-bottom: 10px;
-} */
+}
 
 /* .recipeSection {
 	display: flex;
@@ -237,7 +296,7 @@ color: white;
 	width: 100%;
 	border-radius: 0 30px 30px 0;
 	font-size: 20px;
-  }
+}
 
 input {
 	height: 45px;
@@ -246,15 +305,8 @@ input {
 	padding: 0;
 	border: none;
 	background-color: transparent
-  }
-
-.recipeContainer {
-	display: flex;
-	gap: 50px;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 50px;
 }
+
 
 
 .banner {
@@ -268,13 +320,51 @@ input {
 	color: white;
 	background-size: cover;
 	margin-bottom: 30px;
+	
 }
 
+.blueBtn {
+	color:white;
+	align-items: center;
+	align-content: space-between;
+	background-color: rgb(12, 159, 147);
+	border-radius: 5px;
+	text-align: center;
+	font-size: 18px;
+	padding: 17px;
+	margin: 5px;
+
+}
+
+.seeMoreBtn {
+	color:white;
+	align-items: center;
+	align-content: space-between;
+	background-color: rgb(12, 159, 147);
+	border-radius: 2px;
+	text-align: center;
+	font-size: 18px;
+	padding: 5px;
+	margin: 5px;
+	width: 45%;
+	justify-content: center;
+
+}
 .ad-text {
 	display: flex;
-	align-items: center;
+	align-items:center;
 	justify-content: space-between;
+	flex-direction: column;
+	
 	/* font-size: xx-large; */
+} 
+
+.imgAdText {
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	flex-direction: column;
+	
 } 
 
 
@@ -317,44 +407,44 @@ form {
 	height: fit-content;
 	gap: 15px;
 	margin-top: 30px;
-  }
+	}
 
-  section {
+section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  }
-  
-   form input, form textarea {
+	}
+
+form input, form textarea {
 	border: 1px solid #989898;
 	border-radius: 3px;
 	font-size: 20px;
-  }
-  form input[type=radio] {
+	}
+form input[type=radio] {
 	height: 35px;
 	width: 35px;
 	border: 3px;
-  }
-  
-  form label {
+	}
+
+form label {
 	font-size: 20px;
-  }
-  
-  form input:focus {
+	}
+
+form input:focus {
 	--color: hsl(var(--primary-color), var(--l));
 	border: 1px solid var(--color)
-  }
-  
-  form h5 {
+	}
+
+form h5 {
 	color: black;
-  }
-  
-  textarea {
+	}
+
+textarea {
 	width: 100%;
-  }
-  ul {
-	width: 50%;
-  }
+	}
+ul {
+	width: 25%;
+	}
 
 .inputContainer {
 	display: flex;
@@ -375,6 +465,7 @@ form {
 	color:white;
 	align-items: center;
 	align-content: space-between;
+	background-color: rgb(196, 134, 21);
 }
 
 
