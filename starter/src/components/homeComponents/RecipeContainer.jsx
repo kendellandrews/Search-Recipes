@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import RecipeCard from "../newRecipeComponents/RecipeCard";
-// import styles from "./Home.module.css";
 import { BiSearchAlt2 } from "react-icons/bi";
 
 const RecipeContainer = ({recipes}) => {

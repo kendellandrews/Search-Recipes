@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import AdBanner from './AdBanner'
 import RecipeContainer from './RecipeContainer'
 import axios from 'axios'
+import RecipeCard from '../newRecipeComponents/RecipeCard'
 
 const HomeScreen = () => {
   const [recipes, setRecipes] = useState([])
@@ -21,7 +22,7 @@ const HomeScreen = () => {
   },[])
   
   return (
-    <div className='adBanner'>
+    <div >
       <AdBanner />
       <RecipeContainer recipes={recipes}/>
     </div>

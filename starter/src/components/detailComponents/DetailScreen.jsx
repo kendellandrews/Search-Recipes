@@ -18,10 +18,13 @@ const DetailScreen = () => {
   }, []);
 
   return (
-    <section>
-      <DetailImage image={recipe.image_url} title={recipe.recipe_name} />
-      <div className={detailsContainer}>
-          <div className={ingredientsContainer}>
+    <section className="detainScreenSection">
+      <div className="detailImgCon">
+        <DetailImage image={recipe.image_url} title={recipe.recipe_name} />
+      </div>
+
+      <div className="detailsContainer">
+          <div className="ingredientsContainer">
             <h2>Recipe</h2>
             <h4>Prep Time: {recipe.prep_time}</h4>
             <h4>Cook Time: {recipe.cook_time}</h4>
@@ -33,10 +36,11 @@ const DetailScreen = () => {
             })}
           </div>
 
-        <div className={instructionContainer}>
+        <div className="instructionContainer">
           <h2>Instructions</h2>
           <p style={{ whiteSpace: "pre-wrap" }}>
             {recipe.instructions && JSON.parse(recipe.instructions)}
+
           </p>
         </div>
       </div>
