@@ -4,33 +4,34 @@ import { ImFacebook, ImInstagram, ImTwitter, ImGithub } from "react-icons/im";
 const Footer = () => {
   return (
     <footer className="footer">
-        <h5>Hit us up on our socials!</h5>
-      <div id="footerDiv">
+      <div id="footercss">
+          <h5>Hit us up on our socials!</h5>
+        <div id="footerDiv">
 
-        <div className="footericons">
-          <a href="https://www.devmountain.com" target="_blank">
-            <ImFacebook size="1.5em" color="#3f3f3f" />
-          </a>
+          <div className="footericons">
+            <a href="https://www.devmountain.com" target="_blank">
+              <ImFacebook size="1.5em" color="#3f3f3f" />
+            </a>
+          </div>
+
+          <div className="footericons">
+            <a href="https://www.devmountain.com" target="_blank">
+              <ImInstagram size="1.5em" color="#3f3f3f" />
+            </a>
+          </div>
+
+          <div className="footericons">
+            <a href="https://www.devmountain.com" target="_blank">
+              <ImTwitter size="1.5em" color="#3f3f3f" />
+            </a>
+          </div>
+
+          <div className="footericons">
+            <a href="https://www.devmountain.com" target="_blank">
+              <ImGithub size="1em" color="#3f3f3f" />
+            </a>
+          </div>
         </div>
-
-        <div className="footericons">
-          <a href="https://www.devmountain.com" target="_blank">
-            <ImInstagram size="1.5em" color="#3f3f3f" />
-          </a>
-        </div>
-
-        <div className="footericons">
-          <a href="https://www.devmountain.com" target="_blank">
-            <ImTwitter size="1.5em" color="#3f3f3f" />
-          </a>
-        </div>
-
-        <div className="footericons">
-          <a href="https://www.devmountain.com" target="_blank">
-            <ImGithub size="1em" color="#3f3f3f" />
-          </a>
-        </div>
-
       </div>
       
       <svg className="logo"

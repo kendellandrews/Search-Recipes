@@ -144,6 +144,11 @@ width: 70%;
 
 } 
 
+#footercss {
+	display: flex;
+	flex-direction: column;
+}
+
 #footerDiv {
 	display: flex;
 }
